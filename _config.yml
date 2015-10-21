@@ -1,7 +1,7 @@
 destination: ./_site
 plugins: ./_plugins
 future: true
-permalink: date
+permalink: /:categories/:title/
 relative_permalinks: true
 encoding: UTF-8
 highlighter: pygments
