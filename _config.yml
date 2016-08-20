@@ -2,6 +2,6 @@ destination: ./_site
 plugins: ./_plugins
 future: true
 permalink: /:categories/:title/
-relative_permalinks: true
+# relative_permalinks: true
 encoding: UTF-8
 highlighter: pygments
