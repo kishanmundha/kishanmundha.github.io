@@ -2,7 +2,7 @@
 author: todo
 layout: master
 title: MVC Form authentication
-categories: MVC
+categories: mvc
 ---
 
 ### Login action controller code
