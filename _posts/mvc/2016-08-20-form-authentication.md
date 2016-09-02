@@ -5,6 +5,8 @@ title: MVC Form authentication
 categories: mvc
 ---
 
+Integration of MVC form authentication
+
 ### Login action controller code
 
 {% highlight c-sharp %}

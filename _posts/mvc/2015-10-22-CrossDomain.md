@@ -1,7 +1,7 @@
 ---
 layout: master
 title: Cross domain setup in MVC Web API
-categories: MVC
+categories: mvc
 ---
 
 Setup for cross domain ajax request
