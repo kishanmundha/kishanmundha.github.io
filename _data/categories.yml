@@ -10,3 +10,6 @@
 - name: bower
   title: BOWER
   url: /bower/
+- name: 'general'
+  title: 'General'
+  url: '/general'
