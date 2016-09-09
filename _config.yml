@@ -4,4 +4,4 @@ future: true
 permalink: /:categories/:title/
 # relative_permalinks: true
 encoding: UTF-8
-highlighter: pygments
+highlighter: rouge
