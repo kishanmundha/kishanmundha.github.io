@@ -8,29 +8,27 @@ Setup for cross domain ajax request
 
 ### web.config
 
-{% highlight xml %}
-  <system.webServer>
+``` xml
+<system.webServer>
     <handlers>
-      <remove name="ExtensionlessUrlHandler-Integrated-4.0" />
-      <remove name="OPTIONSVerbHandler" />
-      <remove name="TRACEVerbHandler" />
-      <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="*" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0" />
+        <remove name="ExtensionlessUrlHandler-Integrated-4.0" />
+        <remove name="OPTIONSVerbHandler" />
+        <remove name="TRACEVerbHandler" />
+        <add name="ExtensionlessUrlHandler-Integrated-4.0" path="*." verb="*" type="System.Web.Handlers.TransferRequestHandler" preCondition="integratedMode,runtimeVersionv4.0" />
     </handlers>
     <httpProtocol>
-      <customHeaders>
+        <customHeaders>
         <add name="Access-Control-Allow-Origin" value="*"/>
         <add name="Access-Control-Allow-Methods" value="GET,POST,OPTIONS"/>
         <!--<add name="Access-Control-All-Headers" value="Origin, X-Requested-With, Content-Type, Accept"/>-->
         <add name="Access-Control-Allow-Headers" value="Origin, X-Requested-With, Content-Type, Accept"/>
-      </customHeaders>
+        </customHeaders>
     </httpProtocol>
-  </system.webServer>
+</system.webServer>
+```
 
-{% endhighlight %}
 
-
-{% highlight csharp %}
-
+``` csharp
 [AcceptVerbs("OPTIONS")]
 [HttpOptions]
 [HttpPost]
@@ -68,5 +66,4 @@ public IHttpActionResult Login(LoginModel model)
         role = u.RoleId
     });
 }
-
-{% endhighlight %}
+```

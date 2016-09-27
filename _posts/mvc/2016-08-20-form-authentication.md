@@ -9,7 +9,7 @@ Integration of MVC form authentication
 
 ### Login action controller code
 
-{% highlight c-sharp %}
+``` csharp
 [HttpPost]
 public ActionResult Login(User model, string returnUrl)
 {
@@ -36,10 +36,10 @@ public ActionResult LogOff()
     FormsAuthentication.SignOut();
     return RedirectToAction("Index", "Home");
 }
-{% endhighlight %}
+```
 
 ### Change in `Global.asax.cs`
-{% highlight c-sharp %}
+``` csharp
 protected void Application_PostAuthenticateRequest(Object sender, EventArgs e)
 {
     if (FormsAuthentication.CookiesSupported == true)
@@ -56,4 +56,4 @@ protected void Application_PostAuthenticateRequest(Object sender, EventArgs e)
         }
     }
 } 
-{% endhighlight %}
+```

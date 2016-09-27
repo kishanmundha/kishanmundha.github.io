@@ -9,7 +9,7 @@ Execute a javascript code in batch file
 
 ### Example for execute a api from javascript in bat file
 
-{% highlight bat %}
+``` bat
 @if (@This==@IsBatch) @then
 @echo off
 rem **** batch zone *********************************************************
@@ -42,4 +42,4 @@ var http = WScript.CreateObject("MSXML2.ServerXMLHTTP");
 
     // All done. Exit
     WScript.Quit(0);
-{% endhighlight %}
+```

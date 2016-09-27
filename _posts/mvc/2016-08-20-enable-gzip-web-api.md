@@ -17,11 +17,11 @@ https://www.nuget.org/packages/Microsoft.AspNet.WebApi.MessageHandlers.Compressi
 
 Add this line in `Register` Method
 
-{% highlight c-sharp %}
+``` csharp
 config.MessageHandlers.Insert(0, new ServerCompressionHandler(new GZipCompressor(), new DeflateCompressor()));
-{% endhighlight %}
+```
 
 
 -----
 
-View more on https://damienbod.com/2014/07/16/web-api-using-gzip-compression/
+View more on [https://damienbod.com/2014/07/16/web-api-using-gzip-compression/](https://damienbod.com/2014/07/16/web-api-using-gzip-compression/)
