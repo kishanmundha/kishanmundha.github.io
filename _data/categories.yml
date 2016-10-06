@@ -13,3 +13,6 @@
 - name: 'general'
   title: 'General'
   url: '/general'
+- name: 'dotnet'
+  title: '.NET'
+  url: '/dotnet'
